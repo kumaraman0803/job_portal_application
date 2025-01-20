@@ -1,0 +1,45 @@
+<div class="register-container">
+    <h2>Register</h2>
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" [(ngModel)]="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="orgName">Organisation Name</label>
+                    <input type="text" id="orgName" name="orgName" class="form-control" [(ngModel)]="orgName" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="contactNo">Contact No</label>
+                    <input type="text" id="contactNo" name="contactNo" class="form-control" [(ngModel)]="contactNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" class="form-control" [(ngModel)]="address" rows="3" required></textarea>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Error message -->
+        <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+        <!-- Register button -->
+        <button type="button" class="btn btn-primary" (click)="registerEmployer()">Register</button>
+    </form>
+</div>

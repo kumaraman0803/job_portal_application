@@ -1,0 +1,27 @@
+<!-- employee-management.component.html -->
+<h2>Employee Management</h2>
+
+<!-- Add Employee -->
+<div class="add-employee-container">
+  <input type="text" [(ngModel)]="newEmployee.name" placeholder="Name">
+  <input type="text" [(ngModel)]="newEmployee.position" placeholder="Position">
+  <button (click)="addEmployee()">Add Employee</button>
+</div>
+
+<!-- List Employees -->
+<div class="employee-list-container">
+  <div *ngFor="let employee of employees; let i = index" class="employee-card">
+    <div *ngIf="editingIndex !== i; else editEmployeeForm">
+      <p>{{ employee.name }} - {{ employee.position }}</p>
+      <button class="edit-btn" (click)="startEditing(i, employee)">Edit</button>
+      <button class="delete-btn" (click)="deleteEmployee(i)">Delete</button>
+    </div>
+
+    <ng-template #editEmployeeForm>
+      <input type="text" [(ngModel)]="editingEmployee.name" placeholder="Name">
+      <input type="text" [(ngModel)]="editingEmployee.position" placeholder="Position">
+      <button class="save-btn" (click)="updateEmployee(i)">Save</button>
+      <button class="cancel-btn" (click)="cancelEditing()">Cancel</button>
+    </ng-template>
+  </div>
+</div>

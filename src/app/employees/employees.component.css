@@ -1,0 +1,75 @@
+/* employee-management.component.css */
+.add-employee-container {
+    margin-bottom: 20px;
+  }
+  
+  .add-employee-container input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-employee-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-employee-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employee-list-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .employee-card {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .employee-card p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .edit-btn,
+  .delete-btn,
+  .save-btn,
+  .cancel-btn {
+    padding: 8px 16px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  

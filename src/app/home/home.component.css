@@ -1,0 +1,28 @@
+header {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+}
+
+
+
+button {
+    margin: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+}
+
+.home-container{
+    background-image: url('src\assets\images\Job.jpg'); 
+    background-size: 100% auto; 
+    background-position: center; 
+    height: 100vh;
+    background-repeat: no-repeat;
+   
+}
